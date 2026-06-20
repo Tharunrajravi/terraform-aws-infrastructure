@@ -179,13 +179,15 @@ Using a remote backend provides several advantages:
 
 # GitHub Actions
 
-The repository includes a GitHub Actions workflow that automatically performs:
+The repository includes a GitHub Actions workflow that automatically performs the following checks on every push and pull request:
 
-* Terraform formatting check
-* Terraform initialization
-* Terraform validation
+* Terraform formatting check (`terraform fmt`)
+* Terraform initialization (`terraform init`)
+* Terraform configuration validation (`terraform validate`)
+* Terraform linting using **TFLint**
 
-This helps ensure infrastructure code quality before deployment.
+These automated checks help ensure consistent formatting, validate the Terraform configuration, and identify potential issues or best practice violations before infrastructure changes are applied.
+
 
 ---
 
