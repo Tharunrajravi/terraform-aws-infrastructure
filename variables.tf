@@ -37,6 +37,7 @@ variable "availability_zone" {
 variable "bucket_name" {
   description = "Globally unique S3 bucket name."
   type        = string
+  default     = "neuranx-aws-infra-storage-dev"
 }
 
 variable "instance_type" {
