@@ -4,12 +4,6 @@ variable "aws_region" {
   default     = "ap-south-1"
 }
 
-variable "secondary_region" {
-  description = "Secondary AWS region for provider alias."
-  type        = string
-  default     = "us-east-1"
-}
-
 variable "project_name" {
   description = "Project name used for resource naming."
   type        = string
